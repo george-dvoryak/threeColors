@@ -18,15 +18,12 @@ class ViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     
-    var red: Float = 0.5
-    var green: Float = 0.5
-    var blue: Float = 0.5
+    var red: Float = 0.50
+    var green: Float = 0.50
+    var blue: Float = 0.50
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        redValueLabel.text = String(redSlider.value)
-        greenValueLabel.text = String(greenSlider.value)
-        blueValueLabel.text = String(blueSlider.value)
         mainViewRecrangle.backgroundColor = UIColor(red: CGFloat(red), green: CGFloat(green), blue: CGFloat(blue), alpha: 1.0)
     }
 
